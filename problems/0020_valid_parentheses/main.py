@@ -1,5 +1,6 @@
 class Solution:
     def isValid(self, s: str) -> bool:
+        # valid parentheses must follow a last-opened, first-closed order (like stack)
         stack = []
         close_to_open = {")": "(", "}": "{", "]": "["}
 
